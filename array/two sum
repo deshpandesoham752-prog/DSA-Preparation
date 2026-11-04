@@ -1,0 +1,9 @@
+class Solution(object):
+    def twoSum(self, nums, target):
+
+       mp={}
+       for i in range(len(nums)):
+        com=target-nums[i]
+        if com in mp:
+            return[mp[com],i]
+         mp[nums[i]]=i        
